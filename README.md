@@ -1,25 +1,101 @@
-# CorelDRAW
+<h1 align="center">
+  <img src="assets/img/icon-sm.png" width="72" alt="EMCP Tools logo"><br>
+  MCP Tools for WordPress &amp; Page Builders
+</h1>
 
-## Introduction
+<div align="center">
 
-CorelDRAW is a vector graphics editor for creating artwork for print, digital interfaces, signage, packaging, and technical illustration across different media. Its object-based workspace keeps text, curves, shapes, images, and effects as separate elements that can be selected, transformed, styled, grouped, and arranged. Vector objects are defined by paths and mathematical properties rather than a fixed pixel grid, so they can be resized without losing edge sharpness. The application also supports bitmap content, allowing raster images to be placed, cropped, adjusted, and combined with vector elements.
+[![Version](https://img.shields.io/github/v/release/msrbuilds/elementor-mcp?label=version&color=blue)](https://github.com/msrbuilds/elementor-mcp/releases)
+[![License](https://img.shields.io/badge/license-GPL--2.0--or--later-green.svg)](LICENSE)
+[![PHP](https://img.shields.io/badge/PHP-%3E%3D8.1-8892BF.svg)](https://php.net)
+[![WordPress](https://img.shields.io/badge/WordPress-%3E%3D6.9-21759B.svg)](https://wordpress.org)
+[![Free MCP Tools](https://img.shields.io/badge/Free_MCP_Tools-244-orange.svg)](https://emcptools.com/docs/tools/overview/)
+[![Total MCP Tools with Pro](https://img.shields.io/badge/Total_MCP_Tools_with_Pro-578-blue.svg)](https://emcptools.com/free-vs-pro/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![GitHub Issues](https://img.shields.io/github/issues/msrbuilds/elementor-mcp)](https://github.com/msrbuilds/elementor-mcp/issues)
+[![GitHub Stars](https://img.shields.io/github/stars/msrbuilds/elementor-mcp?style=social)](https://github.com/msrbuilds/elementor-mcp)
 
-A typical workflow begins with document setup. The operator selects page size, orientation, measurement units, color mode, and resolution settings for the intended output. Artwork is built with drawing tools, shape controls, text tools, alignment commands, and object properties. The Objects docker provides a structured view of document elements, which is useful in layouts with overlapping components. Multiple pages can be managed in one file, supporting brochures, catalogs, and related assets.
+**[Docs](https://emcptools.com/docs/) · [Integrations](https://emcptools.com/integrations/) · [Changelog](https://emcptools.com/changelog) · [Pro](https://emcptools.com/pricing) [Download from WordPress](https://wordpress.org/plugins/emcp-lite/)**
 
-CorelDRAW is used in production environments where editable source files and predictable output matter. A designer might create a logo from curves, prepare a business card with exact dimensions, or lay out a large-format sign. Work can be saved in the native CDR format for continued editing or exported to PDF, SVG, PNG, and JPEG. Export settings should match the receiving workflow, particularly when color accuracy, font handling, transparency, or physical dimensions are critical.
+</div>
 
-## Creating and Managing Vector Artwork
+Turn your WordPress site into something an AI agent can actually operate.
 
-Vector construction in CorelDRAW is based on curves, nodes, and object geometry. The Rectangle, Ellipse, Polygon, and Freehand tools create basic objects; the Shape tool edits their outlines by manipulating nodes and Bézier handles. Nodes determine where a curve changes direction, while handles control its tangent and curvature. For example, a simple icon can be drawn from circles and rounded rectangles, then refined by converting selected edges to curves and adjusting individual nodes.
+EMCP Tools is a WordPress plugin that exposes your site as **[MCP](https://modelcontextprotocol.io/) tools**, so Claude, Cursor, and any other MCP client can build Elementor pages, write content, manage plugins and users, audit performance and security, and drive the plugins you already run. It runs on the [MCP Adapter](https://wordpress.org/plugins/mcp-adapter/): EMCP Tools includes a copy, and uses the official plugin instead when it is active.
 
-Use the Pick tool to select and transform objects. Dragging corner handles changes size, rotation handles rotate the selection, and property-bar fields allow numeric control over position and dimensions. For repeatable layouts, enter exact X and Y coordinates and set object width and height rather than relying on visual placement. Alignment and distribution commands help maintain consistent spacing between elements. Group related components to move or scale them together; use Combine when separate curves must become one curve object, and Weld, Trim, or Intersect when geometry needs to be merged or cut.
+<img width="2331" height="1399" alt="emc-dashboard" src="https://github.com/user-attachments/assets/e939408d-7005-4c0f-b157-fdb353d4c0c6" />
 
-Complex documents benefit from deliberate object organization. Rename important objects, group related artwork, and use layers to separate background elements, artwork, annotations, and guides. Lock objects that should not move during editing. This is particularly useful for packaging layouts, where a background or dieline must remain fixed while labels and graphics are adjusted. Before delivery, inspect curves for stray nodes, open paths, unintended overlaps, and objects extending beyond the page or required production area.
 
-## Typography, Color, and Output Preparation
+> **EMCP Pro, 10% off for the GitHub community**: use code **`EMCPGIT`** at [emcptools.com/pricing](https://emcptools.com/pricing).
 
-Text in CorelDRAW can be created as artistic text for short labels and headlines or paragraph text for longer blocks. Artistic text is edited directly on the page and suits a logo or title. Paragraph text sits inside a frame, where line wrapping and text flow can be controlled. Use consistent font families, sizes, leading, and alignment to establish hierarchy. When a layout moves to another workstation or print provider, confirm font availability. Converting final text to curves preserves its appearance but removes normal text editability, so keep an editable copy first.
+<img width="2132" height="471" alt="emcp-promo-banner-new" src="https://github.com/user-attachments/assets/d2439b0b-2f56-461d-b3be-1ccc39bc2877" />
 
-Set color management before finalizing production artwork. Choose RGB for screen assets and the appropriate CMYK profile for print, based on the printer's requirements. Spot colors may be needed for jobs using defined inks, such as branded packaging or signage. Do not judge print color solely from an uncalibrated monitor. For placed bitmap images, check effective resolution at final physical size; enlarging a low-resolution image can make pixels visible in print.
 
-Prepare output for its destination. For a print PDF, verify page size, bleed, margins, image resolution, color settings, and whether fonts should be embedded or converted to curves. Include crop marks only when requested by the printer. For web graphics, export selected objects or pages to PNG, JPEG, or SVG, choosing dimensions and transparency deliberately. Reopen the exported file or inspect a PDF proof to catch missing fonts, clipped objects, color shifts, and incorrect scaling before release.
+## What it does
+
+**244 Free tools, 578 total with Pro.** These are catalog totals across all supported integrations, including 334 Pro tools. The tools available to your AI client depend on your installed plugins, selected builder, and enabled tools. See the [tool catalog](https://emcptools.com/tools/) for every tool and what it needs.
+
+**Build pages.** Dedicated integrations cover Elementor, Bricks, Breakdance, Avada, Divi 5, Thrive Architect, Oxygen, Kirki, WPBakery, Beaver Builder, BeBuilder and Visual Composer. Select one standalone builder while Gutenberg stays available. Spectra, Kadence Blocks, GenerateBlocks, Blocksy Blocks and Otter Blocks have independent toggles. Pro adapters expose native features verified for supported vendor versions; see each bundled skill for scope and limitations.
+
+**Run the site.** Content and taxonomies, media, users, settings, plugins and themes, nav menus, the filesystem, and the database, all over MCP.
+
+**Understand and undo.** One-call page snapshots, public front-end HTML inspection, content search across your own pages and templates, a change ledger with rollback, and read-only performance and security scans that return a scored report.
+
+**Speak your plugins.** Integrations that register only when the plugin is active: ACF, Meta Box, WooCommerce, 8 form builders, 7 SEO plugins, and the Elementor addon packs. New in 3.21.1, free: Redirection, Custom Post Type UI, Pods, WP Mail SMTP, LiteSpeed Cache and Wordfence; in Pro: FluentSMTP, Flamingo, Site Kit and Ultimate Member. Pro also covers Polylang, TranslatePress, TablePress, Tutor LMS, LifterLMS, The Events Calendar, Amelia, FluentCRM, MailPoet and FunnelKit. See the [integrations directory](https://emcptools.com/integrations/).
+
+**Animate with GSAP.** Pro includes an opt-in local GSAP 3.15.0 integration: core plus all 24 distributed plugins, stable WordPress handles, context and per-plugin switches, and MCP read/write management.
+
+Elementor is **optional**. Every WordPress domain works without it; installing Elementor unlocks the page-building family.
+
+→ **[Full tool reference](https://emcptools.com/docs/tools/overview/)**
+
+## Install
+
+1. Download the latest `emcp-tools-*.zip` from [Releases](https://github.com/msrbuilds/elementor-mcp/releases/).
+2. In WordPress: **Plugins → Add New → Upload Plugin**, then activate.
+3. Open the **EMCP Tools** menu in the admin sidebar.
+
+Free installs update in place from **Dashboard → Updates**.
+
+**Requires** WordPress 6.9+ and PHP 8.1+. Elementor 3.20+ is optional (4.0+ for atomic elements). The [MCP Adapter](https://wordpress.org/plugins/mcp-adapter/) is included (the official plugin is used instead when it is active); the Abilities API is in WordPress core.
+
+→ [Installation guide](https://emcptools.com/docs/getting-started/installation/) · [Requirements](https://emcptools.com/docs/getting-started/requirements/)
+
+## Connect your AI client
+
+The **Connection** screen in the admin walks you through four steps and generates a ready-to-paste config for your client, including a one-click `.mcpb` bundle for Claude Desktop. That is the fastest route, and it fills in your site URL and credentials for you.
+
+Step-by-step guides per client:
+
+[Claude Code](https://emcptools.com/docs/connecting/claude-code/) · [Claude Desktop](https://emcptools.com/docs/connecting/claude-desktop/) · [Cursor](https://emcptools.com/docs/connecting/cursor/) · [VS Code](https://emcptools.com/docs/connecting/vscode/) · [Antigravity](https://emcptools.com/docs/connecting/antigravity/) · [ChatGPT](https://emcptools.com/docs/connecting/chatgpt-app/) · [WP-CLI](https://emcptools.com/docs/connecting/wp-cli/) · [OAuth](https://emcptools.com/docs/connecting/oauth/) · [Multiple sites](https://emcptools.com/docs/connecting/multiple-sites/)
+
+Tools not showing up? Start with [no tools appearing](https://emcptools.com/docs/troubleshooting/no-tools-appearing/) or [tool cap exceeded](https://emcptools.com/docs/troubleshooting/tool-cap-exceeded/).
+
+## Safe by default
+
+Every tool runs a real WordPress capability check before it does anything, so an agent can only do what the authenticating user could do by hand.
+
+Anything that writes, deletes, or renders site-wide **ships disabled** and is opt-in from **EMCP Tools → Tools**. Destructive operations additionally require an explicit `confirm: true`. Administrators cannot be edited over MCP, there is no delete-user tool, and filesystem access is confined to the WordPress root with automatic backups and an audit log.
+
+→ [Permission model](https://emcptools.com/docs/tools/overview/#permission-model)
+
+## Sample prompts
+
+The [`prompts/`](prompts/) directory has five complete landing-page blueprints, design system, structure, images, and animations, that build an entire page from a single paste: [Local Business](prompts/LOCAL_BUSINESS.md), [Dental Clinic](prompts/DENTAL_CLINIC.md), [Developer Portfolio](prompts/WEB_DEVELOPER_PORTFOLIO.md), [Hair Salon](prompts/HAIR_SALON.md), [Car Wash](prompts/CAR_WASH.md).
+
+A library of 100 prompts across 20 categories, 50 landing pages and 50 complete websites, is included with [Pro](https://emcptools.com/pricing).
+
+## Contributing
+
+Bug reports, feature requests, and pull requests are all welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+1. Fork the repo
+2. Create a branch (`git checkout -b feature/amazing-tool`)
+3. Make your changes and test locally
+4. Open a Pull Request
+
+**Contributors**: [@msrbuilds](https://github.com/msrbuilds) (author and maintainer)
+
+## License
+
+[GNU General Public License v2.0 or later](LICENSE).
